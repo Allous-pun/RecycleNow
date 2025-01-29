@@ -1,0 +1,119 @@
+.quotation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.quotation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.quote-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quote-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quote-header h2 {
+  font-size: 22px;
+  color: #333;
+}
+
+.quote-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering form elements */
+}
+
+.quotation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between fields */
+  width: 100%; /* Ensures the form takes full width */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Ensures pointer cursor on hover */
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .quote-card h2 {
+      font-size: 20px;
+  }
+
+  .quote-card p {
+      font-size: 14px;
+  }
+
+  .modal-content {
+      width: 90%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .quotation-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .quote-card h2 {
+      font-size: 18px;
+  }
+
+  .quote-card p {
+      font-size: 13px;
+  }
+}

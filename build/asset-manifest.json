@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a9ed25c.css",
+    "main.js": "/static/js/main.3554345f.js",
+    "static/js/453.76b1e4de.chunk.js": "/static/js/453.76b1e4de.chunk.js",
+    "static/media/banner.png": "/static/media/banner.c49a1c04e8a124531e68.png",
+    "static/media/om.jpeg": "/static/media/om.f8ce1fd91eb1e1a91bf7.jpeg",
+    "static/media/6.jpg": "/static/media/6.6163e0978db04d5d7f53.jpg",
+    "static/media/om0.jpeg": "/static/media/om0.064565a98fd2e103aa4a.jpeg",
+    "static/media/10.jpeg": "/static/media/10.abe3673f89ce120e09c5.jpeg",
+    "static/media/subBanner.jpg": "/static/media/subBanner.c8a565e9d0eb2b9a638f.jpg",
+    "static/media/card.png": "/static/media/card.b97fede5d0b0c6476cb7.png",
+    "static/media/02.jpeg": "/static/media/02.63a8f9a6317824b9ba52.jpeg",
+    "static/media/r4.jpeg": "/static/media/r4.a6fdad3ec0740de81b29.jpeg",
+    "static/media/melody.jpg": "/static/media/melody.e5126e8dfe4431486fc2.jpg",
+    "static/media/r3.jpeg": "/static/media/r3.471d7412def2cd0374c1.jpeg",
+    "static/media/profile.jpeg": "/static/media/profile.df4db83a53672aedfecb.jpeg",
+    "static/media/r2.jpeg": "/static/media/r2.aaecf6cf2f738fa133e6.jpeg",
+    "static/media/r5.jpeg": "/static/media/r5.aaecf6cf2f738fa133e6.jpeg",
+    "static/media/r6.jpeg": "/static/media/r6.b07b0c293e66ab6e988c.jpeg",
+    "static/media/logo.png": "/static/media/logo.56958677944b39509d06.png",
+    "static/media/r1.jpeg": "/static/media/r1.b942e47a4b03c1a4a9d4.jpeg",
+    "static/media/project2.png": "/static/media/project2.e632f3cd04d4d60c0b8f.png",
+    "static/media/project1.png": "/static/media/project1.2d6375780df85bcdab15.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/testimonial1.png": "/static/media/testimonial1.24ff453e9994676e2b62.png",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/mpesa.webp": "/static/media/mpesa.ff5bfc915361975edf0a.webp",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.6a9ed25c.css.map": "/static/css/main.6a9ed25c.css.map",
+    "main.3554345f.js.map": "/static/js/main.3554345f.js.map",
+    "453.76b1e4de.chunk.js.map": "/static/js/453.76b1e4de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a9ed25c.css",
+    "static/js/main.3554345f.js"
+  ]
+}

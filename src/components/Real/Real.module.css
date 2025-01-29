@@ -1,0 +1,127 @@
+.img {
+    width: 100%;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff !important;
+    font-family: 'Poppins';
+    text-align: left;
+}
+
+.subHeading {
+    font-size: 34px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: left;
+    width: 400px;
+    margin-bottom: 45px;
+}
+
+.content {
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-align: left;
+    color: #1d1d1d;
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.btn {
+    width: 272px;
+    height: 64px;
+    font-size: 14px;
+}
+
+.text {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    .text {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .heading {
+        font-size: 25px;
+    }
+    .subHeading {
+        font-size: 28px;
+        width: 300px;
+    }
+    .btn {
+        height: 50px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .imgDiv {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .imgDiv {
+        margin-top: 0px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .subHeading {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .heading {
+        font-size: 18px;
+    }
+    .subHeading {
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+    .content {
+        margin-bottom: 23px;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .subHeading {
+        width: 100%;
+    }
+}
+
+.statsBox {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #017E84;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.statsBox:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #000;  /* Black background on hover */
+    color: #fff; /* Change text color to white */
+}
+
+.statsNumber {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.statsLabel {
+    font-size: 1.1rem;
+    color: #ffffff;
+}

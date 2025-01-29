@@ -1,0 +1,104 @@
+.contain {
+    padding: 20px 0;
+    margin-bottom: 150px;
+}
+
+.head {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 500;
+    color: #017E84;
+    margin-bottom: 13px;
+}
+
+.our {
+    display: inline;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+
+.study {
+    display: inline;
+    font-size: 34px;
+    font-weight: bold;
+    color: #6C4D38;
+}
+
+.serviceContainer {
+    padding: 20px;
+    border: 1px solid #017E84;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin: 30px auto; /* Add vertical and horizontal spacing between containers */
+    width: 90%; /* Decreased width */
+    max-width: 300px; /* Limit the maximum width */
+    height: 350px; /* Increased height */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure items align from the top */
+    align-items: center; /* Center-align icon and text */
+}
+
+/* Icon placement and styling */
+.icon {
+    font-size: 60px; /* Larger size for icons */
+    color: #017E84;
+    margin-bottom: 20px; /* Space below the icon */
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover effects */
+.serviceContainer:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: translateY(-5px); /* Lift effect */
+    background-color: #478696; /* Subtle background change */
+}
+
+.serviceContainer:hover .icon {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    color: #000000; /* Change icon color */
+}
+
+/* Title and description styling */
+.imgTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.serviceDescription {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+    text-align: center; /* Ensure text is centered */
+    margin-top: 10px; /* Space above the description */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .serviceContainer {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .head {
+        font-size: 20px;
+    }
+
+    .our, .study {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .head {
+        font-size: 25px;
+    }
+    .our, .study {
+        font-size: 30px;
+    }
+}

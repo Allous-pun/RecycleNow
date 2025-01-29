@@ -1,0 +1,155 @@
+/* SignUp.module.css */
+
+.signupContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .signupTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .loginLink {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #2f7096; /* Use the specified color */
+  }
+  
+  
+  .signupButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #2f7096;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signupButton:hover {
+    background-color: #305580;
+  }
+  
+  .orDivider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .googleSignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #05361e;
+    border: 1px solid #2f7096;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .googleIcon {
+    margin-right: 10px;
+  }
+  
+  .googleSignup:hover {
+    background-color: #305580;
+    color: #fff;
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    outline: none;
+    z-index: 1001;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for focus */
+    z-index: 1000;
+  }
+  
+  .modal h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2f7096; /* Use your main theme color */
+    margin-bottom: 15px;
+  }
+  
+  .modal p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .modalButton {
+    background-color: #2f7096;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modalButton:hover {
+    background-color: #305580;
+  }
+  

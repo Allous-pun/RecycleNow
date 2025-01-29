@@ -1,0 +1,170 @@
+.admin-dashboard {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f7f6; /* Light background for the entire dashboard */
+    min-height: 100vh; /* Ensuring the dashboard fills the screen */
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Green title */
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .dashboard-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-section {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .dashboard-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hover effect for sections */
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .btn {
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .btn-add-admin {
+    background-color: #8bc34a; /* Slightly different green */
+    color: white;
+  }
+  
+  .btn-remove-admin {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .user-item, .payment-item, .admin-item, .log-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .user-item {
+    color: #4CAF50;
+  }
+  
+  .payment-item {
+    color: #2196F3;
+  }
+  
+  .admin-item {
+    color: #8bc34a;
+  }
+  
+  .log-item {
+    font-size: 0.9rem;
+    color: #555;
+    padding-left: 10px;
+  }
+  
+  .log-item:last-child {
+    border-bottom: none;
+  }
+  
+  .dashboard-section ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .dashboard-section canvas {
+    width: 100%;
+    height: 250px !important;
+    border-radius: 8px;
+  }
+  
+  .dashboard-row:last-child {
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-section {
+      flex: 1 1 100%;
+    }
+  
+    .dashboard-container {
+      gap: 10px;
+    }
+  
+    .btn {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .input-field {
+      padding: 10px;
+    }
+  
+    .dashboard-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-title {
+      font-size: 1.8rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+    }
+  }
+  

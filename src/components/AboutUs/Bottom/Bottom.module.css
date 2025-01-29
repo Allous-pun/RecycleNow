@@ -1,0 +1,81 @@
+/* General styling for new section containers */
+.itemContainer {
+    background-color: rgb(248, 249, 250); /* Light background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Internal padding for spacing */
+    text-align: center; /* Center content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+    width: 100%; /* Ensure the item container takes full width */
+}
+
+/* Title and content within the item containers */
+.itemHeading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(42, 84, 112);
+    margin-bottom: 15px; /* Add space below the heading */
+}
+
+.itemContent {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(0, 1, 2);
+    opacity: 0.85;
+    margin-top: 10px; /* Add space above the paragraph */
+}
+
+/* Hover effect for item containers */
+.itemContainer:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Spacing adjustments for rows */
+.row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap for consistent spacing between items */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 992px) {
+    .itemHeading {
+        font-size: 20px;
+    }
+
+    .itemContent {
+        font-size: 14px;
+    }
+
+    .itemContainer {
+        width: 100%; /* Ensure the item container takes full width on medium screens */
+    }
+
+    .row {
+        gap: 15px; /* Adjust gap for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .itemHeading {
+        font-size: 18px;
+    }
+
+    .itemContent {
+        font-size: 13px;
+    }
+
+    .row {
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .itemContainer {
+        width: 100%; /* Ensure item container takes full width on small screens */
+    }
+}

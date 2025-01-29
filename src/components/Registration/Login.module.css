@@ -1,0 +1,168 @@
+.loginContainer {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .loginTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; 
+  }
+  
+  .signupLink {
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #007bff; 
+    text-decoration: none;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-40%);
+    cursor: pointer;
+    color: #05361e; /* Use the specified color */
+  }
+  
+  .loginButton {
+    background-color: #05361e; /* Use the specified color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .loginButton:hover {
+    background-color: #305580;
+  }
+  .forgotPasswordLink {
+    color: #05361e; /* Use the specified color */
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  
+  .orDivider {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .googleLogin {
+    background-color: #fff;
+    border: 1px solid #6C4D38; /* Use the specified color */
+    color: #05361e; /* Use the specified color */
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .googleIcon {
+    margin-right: 10px;
+  }
+
+  .googleLogin:hover {
+    background-color: #305580;
+    color: #fff;
+  }
+  /* Overlay for the dialog */
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Dialog content container */
+.dialogContent {
+  background: white;
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  width: 320px; /* Small, rectangular size */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  text-align: center;
+}
+
+/* Dialog title */
+.dialogContent h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Dialog message */
+.dialogContent p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Close button styling */
+.closeDialogButton {
+  background-color: #4CAF50; /* Green for success */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.closeDialogButton:hover {
+  background-color: #45a049;
+}
+
+/* For error dialog button */
+.errorButton {
+  background-color: #FF4C4C; /* Red for error */
+  color: white;
+}
+
+.errorButton:hover {
+  background-color: #FF1C1C;
+}
+
+/* Make the text elements responsive */
+@media (max-width: 400px) {
+  .dialogContent {
+    width: 90%; /* Make dialog responsive on smaller screens */
+  }
+}
+
+  

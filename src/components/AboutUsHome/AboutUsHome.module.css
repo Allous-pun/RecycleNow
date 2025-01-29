@@ -1,0 +1,61 @@
+.contain {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: #017E84;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.box:hover {
+    background-color: #000000; /* Black background on hover */
+    color: white; /* Text color changes to white when hovered */
+}
+
+.box h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.partnerBox {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.partnerBox:hover {
+    background-color: #000000; /* Black background on hover */
+    color: white; /* Text color changes to white when hovered */
+}
+
+.partnerBox h3 {
+    font-size: 28px;
+    color: #417d85;
+    margin-bottom: 20px;
+}
+
+.partnerBox p {
+    font-size: 18px;
+    color: #34495e;
+}
