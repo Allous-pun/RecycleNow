@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './ForgotPassword.module.css';
-import { getAuth, sendPasswordResetEmail } from 'firebase/auth';  // Firebase function
 import Modal from 'react-modal';
 import { FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 
@@ -12,18 +11,16 @@ const ForgotPassword = () => {
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
   const [isErrorModalOpen, setIsErrorModalOpen] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [isRequestingResetLink, setIsRequestingResetLink] = useState(true);  // Track the type of request (link vs reset)
-
-  const auth = getAuth();  // Firebase Authentication instance
+  const [isRequestingResetLink, setIsRequestingResetLink] = useState(true);
 
   const handleSubmitRequestLink = async (e) => {
     e.preventDefault();
     try {
-      await sendPasswordResetEmail(auth, email);  // Send reset email
-      setIsSuccessModalOpen(true);  // Show success message
+      console.log(`Password reset email requested for: ${email}`);
+      setIsSuccessModalOpen(true);
     } catch (error) {
-      setErrorMessage(error.message);
-      setIsErrorModalOpen(true);  // Show error message
+      setErrorMessage("An error occurred while requesting the reset link.");
+      setIsErrorModalOpen(true);
     }
   };
 
@@ -36,8 +33,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      // You would need to handle password reset here, like calling a backend API or directly using Firebase
-      // If using Firebase: call a function like updatePassword(user, newPassword)
+      console.log("Password reset successfully.");
       setIsSuccessModalOpen(true);
     } catch (error) {
       setErrorMessage(error.message || 'An error occurred');

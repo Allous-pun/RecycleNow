@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import styles from './SignUp.module.css';
-import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa'; 
-import Modal from 'react-modal'; 
-import { signUpWithEmailAndPassword, sendVerificationEmail } from '../../firebase';
+import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
+import Modal from 'react-modal';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -13,14 +12,14 @@ const SignUp = () => {
     password: '',
     confirmPassword: ''
   });
-  
+
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
-  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false); 
-  const [isErrorModalOpen, setIsErrorModalOpen] = useState(false); 
-  const [errorMessage, setErrorMessage] = useState(''); 
-  const [loading, setLoading] = useState(false);  // State for loading
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+  const [isErrorModalOpen, setIsErrorModalOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   // Email validation regex
@@ -33,13 +32,12 @@ const SignUp = () => {
     });
   };
 
-  // Check if the form is valid before enabling submit button
   const isFormValid = () => {
     return (
       formData.email &&
       emailRegex.test(formData.email) &&
       formData.password === formData.confirmPassword &&
-      formData.password.length >= 6  // You can add more password validation
+      formData.password.length >= 6
     );
   };
 
@@ -51,21 +49,18 @@ const SignUp = () => {
       return;
     }
 
-    setLoading(true); // Start loading indicator
+    setLoading(true);
 
     try {
-      // Create user using Firebase Authentication
-      const user = await signUpWithEmailAndPassword(formData.email, formData.password);
-
-      // Send email verification after user creation
-      await sendVerificationEmail(user);
-
-      setIsSuccessModalOpen(true); // Show success modal
+      // Simulating successful signup (replace with API request if needed)
+      setTimeout(() => {
+        setIsSuccessModalOpen(true);
+        setLoading(false);
+      }, 1500);
     } catch (error) {
-      setErrorMessage(error.message);
-      setIsErrorModalOpen(true); // Show error modal
-    } finally {
-      setLoading(false); // Stop loading indicator
+      setErrorMessage("An error occurred during registration.");
+      setIsErrorModalOpen(true);
+      setLoading(false);
     }
   };
 
@@ -76,7 +71,7 @@ const SignUp = () => {
 
   const handleSuccessContinue = () => {
     setIsSuccessModalOpen(false);
-    navigate('/login'); // Navigate to login page after success
+    navigate('/login');
   };
 
   return (
@@ -157,7 +152,7 @@ const SignUp = () => {
         <button
           type="submit"
           className={styles.signupButton}
-          disabled={!isFormValid() || loading}  // Disable button if form is invalid or loading
+          disabled={!isFormValid() || loading}
         >
           {loading ? "Signing Up..." : "Sign Up"}
         </button>

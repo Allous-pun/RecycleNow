@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom'; 
-import { signInWithEmailAndPassword, auth } from '../../firebase';
 import styles from './Login.module.css'; 
 import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa'; 
 
@@ -25,22 +24,15 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      // Firebase sign-in with email and password
-      const userCredential = await signInWithEmailAndPassword(auth, formData.email, formData.password);
-      
-      const user = userCredential.user; // Get the authenticated user
-
-      console.log("User logged in successfully:", user);
-      
-      // Optionally, store the token or user info for session management
-      localStorage.setItem('authToken', await user.getIdToken());
-
-      setShowSuccessDialog(true); // Show success dialog
-    } catch (error) {
-      console.error('Login failed:', error.message);
-      setError(error.message); // Set the error message from Firebase
-      setShowErrorDialog(true); // Show error dialog on failure
+    
+    // Placeholder authentication (you can integrate your own backend here)
+    if (formData.email === "test@example.com" && formData.password === "password123") {
+      console.log("User logged in successfully");
+      localStorage.setItem('authToken', 'dummy-token'); // Example token storage
+      setShowSuccessDialog(true);
+    } else {
+      setError("Invalid email or password.");
+      setShowErrorDialog(true);
     }
   };
 
@@ -121,7 +113,7 @@ const Login = () => {
         <div className={styles.dialogOverlay}>
           <div className={styles.dialogContent}>
             <h3>Login Failed</h3>
-            <p>{error}</p> {/* Display the specific error message */}
+            <p>{error}</p>
             <button onClick={handleCloseErrorDialog} className={`${styles.closeDialogButton} ${styles.errorButton}`}>
               Try Again
             </button>
