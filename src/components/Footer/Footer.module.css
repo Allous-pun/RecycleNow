@@ -193,3 +193,17 @@
         width: 70%;
     }
 }
+
+/*new contact information section*/
+.head {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:   #fefefe;
+}
+
+.text {
+    font-size: 16px;
+    color: #fdf8f8;
+    margin: 5px 0;
+}

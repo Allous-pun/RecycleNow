@@ -27,28 +27,30 @@ const Footer = () => {
 
     return (
         <>
-            {/* Newsletter Section */}
-            <div className={styles.newsletterContainer}>
-                <div className={styles.newsletterContent}>
-                    <p className={styles.newsletterText}>
-                        Subscribe to our newsletter to get <br />
-                        our updates and recommendations.
-                    </p>
-                    <div className={styles.newsletterInputContainer}>
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            className={styles.newsletterInput}
-                        />
-                        <button
-                            className={styles.subscribeButton}
-                            onClick={() => (window.location.href = "mailto:info@recyclenow.com")}
-                        >
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-            </div>
+          {/* Newsletter Section */}
+<div className={styles.newsletterContainer}>
+    <div className={styles.newsletterContent}>
+        <p className={styles.newsletterText}>
+            Subscribe to our newsletter for <br />
+            updates on our programs and initiatives.
+        </p>
+        <div className={styles.newsletterInputContainer}>
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+                className={styles.newsletterInput}
+            />
+            <button
+                className={styles.subscribeButton}
+                onClick={() => (window.location.href = "mailto:info@recyclenow.com")}
+            >
+                Subscribe
+            </button>
+        </div>
+    </div>
+</div>
+
 
             {/* Footer Section */}
             <div style={{ backgroundColor: '#266F46', paddingTop: '89px', paddingBottom: '90px' }}>
@@ -57,7 +59,7 @@ const Footer = () => {
                         {/* Column 1 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
                             <p className={styles.logo}>RecycleNow</p>
-                            <p className={styles.text}> KilonzoCorp Holdings Ltd is located in the Kilonzocorp building, near Kathaayoni Junior School in Kathaayoni Estate, off Machakos-Kitui Road, in Machakos Town. </p>
+                            <p className={styles.text}>  </p>
                         </div>
 
                         {/* Column 2 */}
@@ -106,11 +108,15 @@ const Footer = () => {
                             <p className={styles.text}>
                                 <FaTwitter className={styles.icon} /> Twitter: @RecycleNow
                             </p>
+                            
                             {/* New Contact Information Section */}
                             <p className={styles.head}>Contact Us</p>
                             <p className={styles.text}>
                                 PO Box 2288-90100 Eldoret
                             </p>
+                            <p className={styles.text}>
+                                 contact@RecycleNow.com
+                                 </p>
                         </div>
                     </div>
                 </div>
