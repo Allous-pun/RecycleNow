@@ -5,13 +5,14 @@ const Bottom = () => {
     return (
         <>
             <div className={`container ${styles.contain} overflow-hidden`}>
-                {/* AI-powered business solutions section */}
+                {/* Efficient Waste Management */}
                 <div className={`row ${styles.aiSection} mb-5`}>
                     <div className="col-12 text-center">
                         <div className={styles.aiContainer}>
-                            <h2 className={styles.aiHeading}>AI-Powered Business Solutions</h2>
+                            <h2 className={styles.aiHeading}>Efficient Waste Management</h2>
                             <p className={styles.aiContent}>
-                                At KilonzoCorp, we harness the power of Artificial Intelligence to revolutionize business operations. From predictive analytics to intelligent automation, our AI-driven solutions empower organizations to make data-driven decisions and stay ahead in the competitive market.
+
+                                RecycleNow revolutionizes waste management through education, efficient services, eco-friendly products, and business support for inventory and sales management. Join us in creating a cleaner, greener future.
                             </p>
                         </div>
                     </div>
@@ -19,20 +20,20 @@ const Bottom = () => {
 
                 {/* New Sections */}
                 <div className="row mb-5">
-                    {/* 3D Visualization and Modeling */}
+                    {/* Public Education */}
                     <div className="col-md-6 d-flex justify-content-center">
                         <div className={styles.itemContainer}>
-                            <h3 className={styles.itemHeading}>3D Visualization and Modeling</h3>
+                            <h3 className={styles.itemHeading}>Public Education</h3>
                             <p className={styles.itemContent}>
                                 Leverage cutting-edge 3D modeling techniques to bring ideas to life, enabling accurate visual representation and immersive experiences.
                             </p>
                         </div>
                     </div>
 
-                    {/* Image and Text Processing Technologies */}
+                    {/* Waste Segregation & Recycling */}
                     <div className="col-md-6 d-flex justify-content-center">
                         <div className={styles.itemContainer}>
-                            <h3 className={styles.itemHeading}>Image and Text Processing Technologies</h3>
+                            <h3 className={styles.itemHeading}>Waste Segregation & Recycling</h3>
                             <p className={styles.itemContent}>
                                 Harness advanced image and text processing to enhance business workflows, automate data extraction, and improve efficiency.
                             </p>
