@@ -12,7 +12,14 @@ const Top = () => {
                     </p>
                     <p data-aos='fade-up' className={styles.content}>
 
-RecycleNow is dedicated to transforming waste management through comprehensive public education, efficient waste collection, segregation, and recycling services. We also offer eco-friendly products and support businesses in managing their stocks, sales, and inventory. Our mission is to revolutionize waste management operations for all stakeholders, fostering a cleaner and greener future for everyone. Join us in our commitment to sustainable practices and environmental stewardship.
+                       RecycleNow is dedicated to transforming waste management through comprehensive public education, efficient waste collection, segregation, and recycling services. We also offer eco-friendly products and support businesses in managing their stocks, sales, and inventory. Our mission is to revolutionize waste management operations for all stakeholders, fostering a cleaner and greener future for everyone. Join us in our commitment to sustainable practices and environmental stewardship.
+                        About Recyclenow
+                    </p>
+                    <p data-aos='fade-up' className={styles.content}>
+                        Recyclenow is dedicated to transforming waste management through comprehensive public education,efficient waste collection,segregation,and recycling services.We also offer eco-friendly 
+                        products and support businesses in managing their stocks,sales and inventory.Our mission is to revolutionize
+                        waste management operations for all stakeholders,fostering a cleaner and greener future for everyone
+                        Join us in our commitment to sustainable practices and environmental stewardship.
                     </p>
                 </div>
             </div>

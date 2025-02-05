@@ -55,6 +55,8 @@ const Footer = () => {
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
                             <p className={styles.logo}>RecycleNow</p>
                             <p className={styles.text}>RecycleNow Ltd is situated in Lake Basin Mall, along Kisumu - Kakamega Highway in Kisumu City.</p>
+                            <p className={styles.logo}>Recyclenow</p>
+                            <p className={styles.text}> Recyclenow Ltd is located in the Recyclenow building, near Mombasa Road, in Nairobi city. </p>
                         </div>
 
                         {/* Column 2 */}
@@ -86,6 +88,10 @@ const Footer = () => {
                             <p className={styles.text}>Public Education</p>
                             <p className={styles.text}>Waste Segregation & Recycling</p>
                             <p className={styles.text}>Eco-Friendly Product Sales</p>
+                            <p className={styles.text}>Waste collection & Disposal</p>
+                            <p className={styles.text}>Segregation and recycling </p>
+                            <p className={styles.text}>Echo Friendly product sales</p>
+                            <p className={styles.text}>Public Educational</p>
                         </div>
 
                         {/* Column 4 */}
@@ -109,6 +115,7 @@ const Footer = () => {
                             <p className={styles.text}>PO Box 2288-90100 Eldoret</p>
                             <p className={styles.text}>PO Box 1345 Kisumu</p>
                             <p className={styles.text}>contact@RecycleNow.com</p>
+                            <p className={styles.text}>PO Box 2288-90100 Nairobi</p>
                         </div>
                     </div>
                 </div>
