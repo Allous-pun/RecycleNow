@@ -42,7 +42,7 @@ const Footer = () => {
                         />
                         <button
                             className={styles.subscribeButton}
-                            onClick={() => (window.location.href = "mailto:info@kilonzocorp.com")}
+                            onClick={() => (window.location.href = "mailto:info@RecycleNow.com")}
                         >
                             Subscribe
                         </button>
@@ -56,8 +56,8 @@ const Footer = () => {
                     <div className="row">
                         {/* Column 1 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
-                            <p className={styles.logo}>KilonzoCorp</p>
-                            <p className={styles.text}> KilonzoCorp Holdings Ltd is located in the Kilonzocorp building, near Kathaayoni Junior School in Kathaayoni Estate, off Machakos-Kitui Road, in Machakos Town. </p>
+                            <p className={styles.logo}>RecycleNow</p>
+                            <p className={styles.text}> RecycleNow Ltd is situated in the Lake Basin Mall along Kisumu - Kakamega Highway in Kisumu City. </p>
                         </div>
 
                         {/* Column 2 */}
@@ -87,31 +87,31 @@ const Footer = () => {
                         {/* Column 3 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
                             <p className={styles.head}>Our Services</p>
-                            <p className={styles.text}>Image & Video Annotation</p>
-                            <p className={styles.text}>Text Annotation</p>
-                            <p className={styles.text}>Audio Annotation</p>
-                            <p className={styles.text}>3D Point Cloud Annotation</p>
+                            <p className={styles.text}>Public Education</p>
+                            <p className={styles.text}>Waste collection & Disposal</p>
+                            <p className={styles.text}>Waste Segregation & Recycling</p>
+                            <p className={styles.text}>Eco-Friendly Product Sales</p>
                         </div>
 
                         {/* Column 4 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
                             <p className={styles.head}>Follow Our Socials</p>
                             <p className={styles.text}>
-                                <FaFacebook className={styles.icon} /> Facebook: @KilonzoCorp
+                                <FaFacebook className={styles.icon} /> Facebook: @RecycleNow
                             </p>
                             <p className={styles.text}>
-                                <FaTiktok className={styles.icon} /> TikTok: @KilonzoCorp
+                                <FaTiktok className={styles.icon} /> TikTok: @RecycleNow
                             </p>
                             <p className={styles.text}>
-                                <FaInstagram className={styles.icon} /> Instagram: @KilonzoCorp
+                                <FaInstagram className={styles.icon} /> Instagram: @RecycleNow
                             </p>
                             <p className={styles.text}>
-                                <FaTwitter className={styles.icon} /> Twitter: @KilonzoCorp
+                                <FaTwitter className={styles.icon} /> Twitter: @RecycleNow
                             </p>
                             {/* New Contact Information Section */}
                             <p className={styles.head}>Contact Us</p>
                             <p className={styles.text}>
-                                PO Box 2288-90100 Machakos
+                                PO Box 1385 -001 Kisumu
                             </p>
                         </div>
                     </div>
@@ -125,7 +125,7 @@ const Footer = () => {
                     width="100%" 
                     height="300" 
                     style={{ border: 0 }} 
-                    title="Location Map of KilonzoCorp"
+                    title="Location Map of RecycleNow"
                     allowFullScreen 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
@@ -134,7 +134,7 @@ const Footer = () => {
 
             {/* Copyright Section */}
             <div style={{ backgroundColor: '#017E84', borderTop: 'solid 1px #707070' }}>
-                <p className={styles.bottom}>Copyright © 2024 Kilonzocorp. All rights reserved</p>
+                <p className={styles.bottom}>Copyright © 2024 RecycleNow. All rights reserved</p>
             </div>
         </>
     );
