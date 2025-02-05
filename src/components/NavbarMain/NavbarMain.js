@@ -73,17 +73,7 @@ const NavbarMain = () => {
               >
                 Services
               </NavLink>
-              <NavLink
-                to="/pricing"
-                className={`${styles.nav_text} nav-link ${activeNav[3] ? styles.active : ""}`}
-                style={{ marginTop: "8px", paddingLeft: '16px' }}
-                onClick={() => {
-                  handleActiveNav(3);
-                  closeNav();
-                }}
-              >
-                Pricing
-              </NavLink>
+              
 
               <NavDropdown
                 title={
