@@ -1,3 +1,4 @@
+
 // Import the required images
 import image1 from '../../assets/home/r1.jpeg';
 import image2 from '../../assets/home/r2.jpeg';
