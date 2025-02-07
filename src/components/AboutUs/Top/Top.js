@@ -32,7 +32,6 @@ const Top = () => {
                         By integrating smart waste management practices, we aim to reduce environmental impact and promote a cleaner, healthier planet. 
                         Join us in making a difference—one step at a time.
                     </p>
-
                 </div>
             </div>
         </div>

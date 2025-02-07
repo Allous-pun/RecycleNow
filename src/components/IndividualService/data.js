@@ -21,8 +21,7 @@ const data = [
             {
                 heading: 'Waste Disposal',
                 icon: image2,
-                content: 'Our responsible waste disposal methods include recycling, composting, and safe landfill management to minimize environmental impact.'
-            },
+                content: 'Our responsible waste disposal methods include recycling, composting, and safe landfill management to minimize environmental impact.'            },
         ]
     },
     {
