@@ -28,23 +28,23 @@ const data = [
     {
         id: 2,
         heading: 'Waste Segregation',
-        content: 'We specialize in waste segregation, sorting organic, recyclable, and hazardous waste to ensure efficient recycling and disposal.',
+        content: 'We specialize in waste segregation by systematically sorting waste into organic, recyclable, and hazardous categories. This process enhances efficient recycling, reduces environmental pollution, and ensures safe disposal. Proper waste segregation conserves resources, minimizes landfill waste, and promotes a circular economy. By separating biodegradable waste for composting, extracting reusable materials for recycling, and safely handling hazardous waste, we contribute to a cleaner and more sustainable environment.',
         to: '/text-annotation',  // URL path for this service
         contents: [
             {
                 heading: 'Organic Waste Segregation',
                 icon: image3,
-                content: 'We segregate organic waste for composting, turning food scraps and plant matter into valuable organic fertilizer.'
+                content: 'We segregate organic waste for composting, transforming food scraps, plant matter, and other biodegradable materials into nutrient-rich organic fertilizer. This process reduces landfill waste, lowers greenhouse gas emissions, and enriches soil health. Composting accelerates natural decomposition, promoting sustainable agriculture and reducing the need for chemical fertilizers. By properly managing organic waste, we help create a circular system where waste is repurposed into valuable resources for farming and gardening.'
             },
             {
                 heading: 'Recyclable Waste Segregation',
                 icon: image4,
-                content: 'Recyclable materials such as paper, plastic, and metals are separated for recycling, reducing waste sent to landfills.'
+                content: 'Recyclable materials such as paper, plastic, glass, and metals are carefully sorted to ensure they can be processed and reused effectively. Recycling reduces the volume of waste sent to landfills, conserves natural resources, and lowers energy consumption required for manufacturing new products. Proper waste segregation helps prevent contamination, ensuring materials are repurposed into new products like eco-friendly packaging, construction materials, and consumer goods. By recycling, we contribute to a cleaner environment and a more sustainable future.'
             },
             {
                 heading: 'Hazardous Waste Management',
                 icon: image4,
-                content: 'We handle hazardous waste safely, ensuring it is segregated and processed according to industry regulations.'
+                content: 'We handle hazardous waste with strict safety protocols, ensuring it is properly segregated, stored, and processed according to industry regulations. Hazardous waste includes chemicals, medical waste, batteries, electronic waste, and toxic substances that require special treatment to prevent environmental contamination and health risks. Our approach involves secure containment, specialized disposal methods, and compliance with environmental laws to protect communities and ecosystems. Proper hazardous waste management reduces pollution, minimizes risks to human health, and supports a cleaner, safer environment.'
             },
         ]
     },
