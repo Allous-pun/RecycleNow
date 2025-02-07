@@ -10,18 +10,18 @@ const data = [
     {
         id: 1,
         heading: 'Waste Collection & Disposal',
-        content: 'We provide efficient waste collection and disposal services, ensuring safe and responsible management of waste for a cleaner environment.',
+        content:"RecycleNow provides efficient waste collection and disposal services for various areas, ensuring safe handling and waste segregation. We use lined landfills, high-temperature incineration to reduce waste volume and generate energy, recycling of materials like paper, glass, plastics, and metals, and composting organic waste into nutrient-rich compost. These methods promote environmental protection and a cleaner, healthier community.",
         to: '/image-video-annotation',  // URL path for this service
         contents: [
             {
                 heading: 'Waste Collection',
                 icon: image1,
-                content: 'We collect various waste types from residential, commercial, and industrial areas, ensuring proper segregation and disposal.'
+                content: "RecycleNow provides efficient waste collection services for residential, commercial, industrial, and public areas. We use waste bins, garbage trucks, and specialized equipment to ensure safe and hygienic handling of waste. Our regular collection services help prevent waste accumulation, promoting cleanliness and public health."
             },
             {
                 heading: 'Waste Disposal',
                 icon: image2,
-                content: 'Our responsible waste disposal methods include recycling, composting, and safe landfill management to minimize environmental impact.'
+                content: " We manage landfill disposal with proper liners and drainage systems to prevent contamination. Our incineration services reduce waste volume and generate energy. We facilitate recycling of materials such as paper, glass, plastics, and metals. Additionally, we offer composting services for organic waste, turning it into nutrient-rich compost. These best practices help us promote environmental protection and a cleaner, healthier community."
             },
         ]
     },
