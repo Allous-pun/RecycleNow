@@ -1,0 +1,209 @@
+.logo{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #fefefe !important;
+    text-align: left;
+}
+
+.serviceItem {
+    display: flex;
+    align-items: center; /* Center icons and text */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    margin: 5px 0; /* Add some space between services */
+}
+
+.serviceIcon {
+    margin-right: 10px; /* Space between icon and text */
+    color: #fefefe; /* Adjust icon color */
+    font-size: 16px; /* Adjust icon size */
+}
+
+
+
+.contain {
+    position: relative; /* Ensure the dropdown is positioned relative to the parent */
+}
+
+.dropdownContent {
+    display: none; /* Hide by default; display controlled via inline styles */
+    background-color: #285a77; /* Same background color for consistency */
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute; /* Position it below the Services header */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: max-height 0.2s ease-out; /* Optional: add some animation */
+}
+
+/* Optionally, add styles for the individual text items */
+.text {
+    color: white; /* Change the text color to improve visibility */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+
+.text{
+    color: #fefefe;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.social_logo{
+    text-align: left;
+    margin-top: 25px;
+}
+.img{
+    margin-right: 14px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    width: 40px;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.head{
+    color: #fefefe;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 28px;
+    font-weight: 500;
+    
+}
+.bottom{
+    color: #fefefe;
+    font-size: 16px;
+    margin-bottom: 0px;
+    height: 49px;
+    padding-top: 12px;
+}
+
+@media screen and (max-width: 992px){
+    .text{
+        width: 230px;
+    }
+    .logo{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 600px){
+    .logo{
+        font-size: 28px;
+    }
+    .head{
+        font-size: 17px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .bottom{
+        font-size: 14px;
+        height: 45px;
+    }
+}
+@media screen and (max-width: 575px){
+    .contain{
+        padding-left: 30% !important;
+        margin-bottom: 25px;
+    }
+    .head{
+        margin-bottom: 10px;
+    }
+    .img{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 455px){
+    .contain{
+        padding-left: 20% !important;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .contain{
+        padding-left: 10% !important;
+    }
+    .text{
+        width: 100%;
+    }
+
+}
+/* Newsletter Section */
+.newsletterContainer {
+    position: relative;
+    background-color: #266F46;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: -50px; /* Overlap the footer */
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.newsletterContent {
+    text-align: center;
+}
+
+.newsletterText {
+    color: #fefefe;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletterInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletterInput {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+    outline: none;
+}
+
+.subscribeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00cddb;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.subscribeButton:hover {
+    background-color: #00f0ff;
+}
+
+/* Adjustments for Socials Section */
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fefefe;
+}
+
+@media screen and (max-width: 600px) {
+    .newsletterInput {
+        width: 70%;
+    }
+}
+
+/*new contact information section*/
+.head {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:   #fefefe;
+}
+
+.text {
+    font-size: 16px;
+    color: #fdf8f8;
+    margin: 5px 0;
+}

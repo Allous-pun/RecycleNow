@@ -1,0 +1,155 @@
+.checkout-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #555;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.payment-card {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.payment-card:hover {
+  border-color: #00796b;
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+.payment-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.payment-card h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.popup-form {
+  position: fixed; /* Ensures the form is always visible */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  z-index: 1000; /* Ensure it stays above other UI elements */
+  background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for focus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Floating shadow */
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%; /* Responsive */
+  overflow-y: auto; /* Adds a scrollbar if content exceeds screen height */
+  max-height: 90%; /* Prevents form from overflowing the viewport */
+}
+
+
+.form-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px; /* Added margin for extra spacing */
+}
+
+.form-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding does not break the layout */
+}
+
+.proceed-button {
+  padding: 12px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+  background-color: #004d40;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.close-button:hover {
+  background-color: #999;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: left;
+}

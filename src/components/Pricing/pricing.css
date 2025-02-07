@@ -1,0 +1,206 @@
+/* General styles */
+.pricing-container {
+  margin-top: 50px;
+  padding: 0 5px; /* Add padding to keep space on the sides */
+}
+
+.pricing-header h2 {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pricing-header p {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Grid Layout for Pricing Plans */
+.column {
+  display: grid; /* Use grid for better control */
+  gap: 20px; /* Adjusted gap between cards for a cleaner look */
+  margin-top: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Forces a 2 by 2 grid layout */
+  justify-content: center; /* Centers the grid in the container */
+}
+
+.card {
+  width: 200%; /* Takes full width within its column */
+  max-width: 460px; /* Maximum width to avoid stretching */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 10px;
+  background-color: #fff;
+  margin: 0 auto; /* Centers the card */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer; /* Changes cursor when hovering over the card */
+  background-color: #a6c8db; 
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+}
+
+.features-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px; /* Adds spacing above the features list */
+  text-align: left; /* Aligns the text to the left */
+}
+
+.feature-item {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center; /* Ensures the text and the icon are vertically aligned */
+  margin-bottom: 8px; /* Adds space between items */
+}
+
+.feature-item .tick {
+  color: green;
+  margin-right: 10px; /* Adds space between the tick and the text */
+}
+
+.feature-item .cross {
+  color: red;
+  margin-right: 10px; /* Adds space between the cross and the text */
+}
+
+/* Styling for default plan (Pro Plan) */
+.default-plan .card {
+  border: 2px solid #00796b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e0f2f1;
+}
+
+.default-title {
+  color: #00796b;
+}
+
+.default-card {
+  background-color: #e0f2f1;
+}
+/* General Button Styling */
+.btn {
+  border: 2px solid #00796b;
+  background-color: transparent; /* Non-default buttons have transparent background */
+  color: #00796b;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-default {
+  background-color: #00796b;
+  color: white;
+  border-color: #00796b;
+  border: 3px solid red; /* Temporary Debug Border */
+}
+
+.btn-bordered {
+  background-color: transparent;
+  color: #00796b;
+  border-color: #00796b;
+  border: 3px dashed blue; /* Temporary Debug Border */
+}
+
+/* Hover States for Debugging */
+.btn:hover {
+  background-color: #00796b;
+  color: white;
+}
+
+.btn-default:hover {
+  background-color: #004d40;
+  border-color: #004d40;
+}
+
+.btn-bordered:hover {
+  background-color: #00796b;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .column {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    grid-template-columns: 1fr; /* Stacks all plans vertically on small screens */
+  }
+
+  .card {
+    width: 90%; /* Makes the card take most of the screen width on small devices */
+    margin-bottom: 20px; /* Adds space between the stacked cards */
+  }
+}
+
+/* General Link Styling */
+.pricing-link {
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default Plan Styling */
+.default-plan-link {
+  background-color: #a6c8db; /* Green background */
+  color: white;
+  border: 2px solid #a6c8db; /* Solid green border */
+}
+
+/* Border-only Link Styling */
+.border-link {
+  background-color: #a6c8db; /* background */
+  color: #00796b;
+  border: 2px solid #a6c8db;
+}
+
+/* Hover States */
+.pricing-link:hover {
+  background-color: #004d40; /* Darker green on hover */
+  color: white;
+}
+
+.default-plan-link:hover {
+  background-color: #004d40; /* Darker green for default plan button */
+  border-color: #004d40;
+}
+
+.border-link:hover {
+  background-color: #00796b; /* Green background on hover for bordered button */
+  color: white;
+}

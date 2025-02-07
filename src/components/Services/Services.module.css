@@ -1,0 +1,92 @@
+/* Container Styling */
+.serviceContainer {
+    padding: 20px;
+    border-radius: 8px; /* Optional: add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover Effect */
+.serviceContainer:hover {
+    background-color: black; /* Change background to black on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Text Color - White by Default */
+.serviceHeading, .serviceContent {
+    color: white; /* Set text color to white by default */
+}
+
+/* Optional: Styling for the heading and content inside the container */
+.serviceHeading {
+    font-size: 18px; /* Customize as needed */
+}
+
+.serviceContent {
+    font-size: 14px; /* Customize as needed */
+}
+
+/* General Container Styling */
+.contain {
+    margin-top: 83px;
+    margin-bottom: 174px;
+}
+
+.cont {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.heading {
+    font-size: 30px;
+    color: #017E84;
+    font-weight: 500;
+}
+
+.subHeading {
+    font-size: 34px;
+    font-weight: bold;
+    color: #017E84;
+    width: 645px;
+}
+
+@media screen and (max-width: 1200px) {
+    .cont {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .subHeading {
+        font-size: 25px;
+        width: auto;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .subHeading {
+        font-size: 20px;
+    }
+
+    .heading {
+        font-size: 17px;
+    }
+
+    .contain {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .cont {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

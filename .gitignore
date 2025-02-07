@@ -1,0 +1,12 @@
+node_modules
+# Exclude all directories and files at the root level except RecycleNow
+/*
+
+# Include the RecycleNow directory
+!/RecycleNow
+
+# Include .gitignore itself
+!.gitignore
+/*
+!/RecycleNow
+!.gitignore

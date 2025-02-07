@@ -1,0 +1,100 @@
+.contain {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+.heading {
+    font-size: 32px; /* Slightly increased for emphasis */
+    color: #6C4D38 !important;
+    font-weight: 600; /* Bolder for better visibility */
+    text-align: center; /* Centered for improved readability */
+}
+
+.subHeading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222a41;
+    max-width: 700px; /* Ensures consistent width across devices */
+    margin: 0 auto; /* Center aligns within parent container */
+    text-align: center;
+}
+
+.icon {
+    width: 70px; /* Adjusted size for better visibility */
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.serviceCard {
+    text-align: center;
+    padding: 25px; /* Increased padding for spacious design */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Softer rounded corners */
+    margin-top: 15px;
+    background-color: #f9f9f9; /* Subtle background color for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link {
+    color: #6C4D38 !important;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.link:hover {
+    color: #94725b !important;
+    text-decoration: underline; /* Added hover underline */
+}
+
+@media screen and (max-width: 1200px) {
+    .contain {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .subHeading {
+        font-size: 24px;
+        width: auto;
+    }
+    .heading {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .subHeading {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .contain {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .contain {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .serviceCard {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+    .icon {
+        width: 50px;
+        height: 50px; /* Adjust icon size for small devices */
+    }
+}

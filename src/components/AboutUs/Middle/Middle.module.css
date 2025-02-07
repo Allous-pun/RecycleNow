@@ -1,0 +1,103 @@
+/* General container styling */
+.contain {
+    padding-top: 146px;
+    padding-bottom: 145px;
+}
+
+.mainHead {
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(56, 108, 104);;
+    margin-bottom: 30px;
+}
+
+.mainContent {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #989e9d;
+    padding-bottom: 110px;
+}
+
+.box {
+    background-color: rgba(40, 90, 119, 0.1);
+    border: solid 2px rgba(220, 216, 226, 0.5);
+    border-radius: 10px;
+    padding: 40px 27px 55.4px 28px;
+    text-align: center; /* Center content in the box */
+}
+
+.icon {
+    color: #ffffff; /* Icon color */
+    margin-bottom: 20px;
+}
+
+.head {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(56, 108, 104);;
+    margin-bottom: 23px;
+    margin-top: 33px;
+}
+
+.content {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #222a41;
+    opacity: .6;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 992px) {
+    .mainHead {
+        font-size: 30px;
+    }
+    .mainContent {
+        font-size: 20px;
+        padding-bottom: 70px;
+    }
+    .contain {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .box {
+        padding: 20px 10px 20px;
+    }
+    .head {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .content {
+        font-size: 20px;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    .box {
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 650px) {
+    .contain {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .mainHead {
+        font-size: 25px;
+    }
+    .mainContent {
+        font-size: 20px;
+    }
+    .head {
+        font-size: 20px;
+    }
+    .content {
+        font-size: 18px;
+    }
+}
