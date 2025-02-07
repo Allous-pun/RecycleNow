@@ -15,7 +15,11 @@ const Services = () => {
     return (
         <div className={`container ${styles.contain} overflow-hidden pb-2`}>
             {/* Updated Company Heading */}
+<<<<<<< HEAD
             <p data-aos='slide-right' className={styles.heading}>KilonzoCorp Top Services</p>
+=======
+            <p data-aos='slide-right' className={styles.heading}>RecycleNow Top Services</p>
+>>>>>>> main
 
             {/* Updated Subheading */}
             <div>

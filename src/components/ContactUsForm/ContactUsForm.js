@@ -29,31 +29,52 @@ const ContactUsForm = () => {
         }
 
         // If validation passes, open the email client
+<<<<<<< HEAD
         const mailtoLink = `mailto:info@kilonzocorp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+=======
+        const mailtoLink = `mailto:info@RecycleNow.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+>>>>>>> main
         window.location.href = mailtoLink;
     }
 
     return (
         <>
             <div className={`container ${styles.contain} overflow-hidden`}>
+<<<<<<< HEAD
                 <p data-aos='fade-up' className={`${styles.heading} mx-auto`}>KilonzoCorp We'd Love to Hear From You</p>
+=======
+                <p data-aos='fade-up' className={`${styles.heading} mx-auto`}>RecycleNow We'd Love to Hear From You</p>
+>>>>>>> main
 
                 <div className="row">
                     <div className="col-md-4" data-aos='fade-right'>
                         <p className={styles.head}>Address</p>
+<<<<<<< HEAD
                         <p className={styles.content}>Kilonzocorp building, near Kathaayoni Junior School in Kathaayoni Estate, off Machakos-Kitui Road, in Machakos Town.</p>
+=======
+                        <p className={styles.content}>TK building Opposite  I & M Bank Tower along Mombasa  Road, in Nairobi City.</p>
+>>>>>>> main
                     </div>
 
                     <div className="col-md-4" data-aos='fade-up' data-aos-offset='100'>
                         <p className={styles.head}>Contact</p>
                         <p className={styles.content}>Mobile : +254 792 371 977</p> 
+<<<<<<< HEAD
                         <p className={styles.content}>Email: info@kilonzocorp.com</p>
+=======
+                        <p className={styles.content}>Email: info@RecycleNow.com</p>
+>>>>>>> main
                     </div>
 
                     <div className="col-md-4" data-aos='fade-left' data-aos-offset='70'>
                         <p className={styles.head}>Hours</p>
+<<<<<<< HEAD
                         <p className={styles.content}>Monday - Friday: 08:00 - 18:00</p>
                         <p className={styles.content}>Saturday: 09:00 - 15:00</p>
+=======
+                        <p className={styles.content}>Monday - Friday: 08:00 - 17:00</p>
+                        <p className={styles.content}>Saturday: 08:00 - 14:00</p>
+>>>>>>> main
                     </div>
                 </div>
 

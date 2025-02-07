@@ -8,7 +8,11 @@
 
 /* Hover Effect */
 .serviceContainer:hover {
+<<<<<<< HEAD
     background-color: black; /* Change background to black on hover */
+=======
+    background-color: #00f0ff; /* Change background to black on hover */
+>>>>>>> main
     transform: scale(1.05); /* Slight scale effect on hover */
 }
 
@@ -40,14 +44,22 @@
 
 .heading {
     font-size: 30px;
+<<<<<<< HEAD
     color: #017E84;
+=======
+    color: #266F46;
+>>>>>>> main
     font-weight: 500;
 }
 
 .subHeading {
     font-size: 34px;
     font-weight: bold;
+<<<<<<< HEAD
     color: #017E84;
+=======
+    color: #266F46;
+>>>>>>> main
     width: 645px;
 }
 

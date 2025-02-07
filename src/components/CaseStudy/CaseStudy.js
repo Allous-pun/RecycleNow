@@ -9,7 +9,11 @@ const CaseStudy = () => {
     return (
         <div className={`container ${styles.contain} overflow-hidden`}>
             <div data-aos='slide-left'>
+<<<<<<< HEAD
                 <p className={styles.study}>KILONZOCORP SERVICES</p>
+=======
+                <p className={styles.study}>RecycleNow SERVICES</p>
+>>>>>>> main
             </div>
 
             {/* Services Container */}
