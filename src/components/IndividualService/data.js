@@ -52,18 +52,18 @@ const data = [
     {
         id: 3,
         heading: 'Waste Recycling',
-        content: 'We provide sustainable waste recycling services, turning waste materials into reusable resources through innovative methods.',
+        content: 'We provide sustainable waste recycling services, turning waste materials into reusable resources through innovative methods. Our goal is to reduce waste and promote environmental conservation by transforming discarded materials into valuable products.',
         to: '/audio-annotation',  // URL path for this service
         contents: [
             {
                 heading: 'Plastic Recycling',
                 icon: image5,
-                content: 'We recycle plastic waste, converting it into new products and reducing plastic pollution in the environment.'
+                content: 'We recycle plastic waste, converting it into new products and reducing plastic pollution in the environment. Our process involves collecting, sorting, and processing various types of plastics, ensuring they are repurposed into useful items like containers, packaging materials, and even clothing. By recycling plastic, we help reduce the demand for virgin materials and minimize the impact on our planet.'
             },
             {
                 heading: 'Metal Recycling',
                 icon: image6,
-                content: 'Our metal recycling process helps conserve natural resources and reduces the energy required to produce new metal items.'
+                content: 'Our metal recycling process helps conserve natural resources and reduces the energy required to produce new metal items. We collect and process scrap metals, such as aluminum, copper, and steel, and transform them into raw materials for manufacturing industries. This not only saves energy but also reduces greenhouse gas emissions and the need for mining new metals. By choosing metal recycling, you contribute to a more sustainable and eco-friendly future.'
             },
         ]
     },
