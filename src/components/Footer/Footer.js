@@ -112,7 +112,7 @@ const Footer = () => {
                             {/* New Contact Information Section */}
                             <p className={styles.head}>Contact Us</p>
                             <p className={styles.text}>
-                                PO Box 2288-90100 Eldoret
+                                PO Box 2288-90100 Kisumu
                             </p>
                             <p className={styles.text}>
                                  contact@RecycleNow.com
@@ -129,7 +129,7 @@ const Footer = () => {
                     width="100%" 
                     height="300" 
                     style={{ border: 0 }} 
-                    title="Location Map of KilonzoCorp"
+                    title="Location Map of RecycleNow Ltd"
                     allowFullScreen 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
