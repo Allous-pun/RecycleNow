@@ -3,7 +3,7 @@ import styles from './CaseStudy.module.css';
 import { Link } from 'react-router-dom';
 
 // Import icons
-import { FaImage, FaFont, FaHeadphones, FaCube } from 'react-icons/fa';
+import { FaTrashAlt, FaRecycle, FaSeedling, FaChalkboardTeacher } from 'react-icons/fa';
 
 const CaseStudy = () => {
     return (
@@ -14,53 +14,56 @@ const CaseStudy = () => {
 
             {/* Services Container */}
             <div className='row mb-2'>
-                {/* Image & Video Annotation */}
+                {/* Waste Collection & Disposal */}
                 <div className={`col-md-4 col-sm-6 mt-4 ${styles.serviceContainer}`} data-aos='fade'>
-                    <Link to="/pricing" style={{ textDecoration: "none" }}>
+                    <Link to="/login" style={{ textDecoration: "none" }}>
                         <div className={styles.img}>
-                            <FaImage className={styles.icon} />
-                            <p className={styles.imgTitle}>Image & Video Annotation</p>
+                            <FaTrashAlt className={styles.icon} />
+                            <p className={styles.imgTitle}>Waste Collection & Disposal</p>
                             <p className={styles.serviceDescription}>
-                                From object detection to semantic segmentation, we provide detailed annotation for images and videos to improve your computer vision models.
+                                RecycleNow offers efficient waste collection and disposal 
+                                through safe handling, waste segregation, recycling, composting, and energy generation, ensuring environmental protection and a cleaner community.
                             </p>
                         </div>
                     </Link>
                 </div>
 
-                {/* Text Annotation */}
+                {/* Waste Segregation */}
                 <div className={`col-md-4 col-sm-6 mt-4 ${styles.serviceContainer}`} data-aos='fade'>
-                    <Link to="/pricing" style={{ textDecoration: "none" }}>
+                    <Link to="/login" style={{ textDecoration: "none" }}>
                         <div className={styles.img}>
-                            <FaFont className={styles.icon} />
-                            <p className={styles.imgTitle}>Text Annotation</p>
+                            <FaSeedling className={styles.icon} />
+                            <p className={styles.imgTitle}>Waste Segregation</p>
                             <p className={styles.serviceDescription}>
-                                Improve your natural language processing (NLP) models with our comprehensive text annotation services, including sentiment analysis, entity recognition, and intent classification.
+                                RecycleNow specializes in waste segregation by 
+                                sorting waste into organic, recyclable, and hazardous categories, promoting efficient recycling, resource conservation, and safe disposal for a sustainable environment.
                             </p>
                         </div>
                     </Link>
                 </div>
 
-                {/* Audio Annotation */}
+                {/* waste recycling */}
                 <div className={`col-md-4 col-sm-6 mt-4 ${styles.serviceContainer}`} data-aos='fade'>
-                    <Link to="/pricing" style={{ textDecoration: "none" }}>
+                    <Link to="/login" style={{ textDecoration: "none" }}>
                         <div className={styles.img}>
-                            <FaHeadphones className={styles.icon} />
-                            <p className={styles.imgTitle}>Audio Annotation</p>
+                            <FaRecycle className={styles.icon} />
+                            <p className={styles.imgTitle}>Waste Recycling</p>
                             <p className={styles.serviceDescription}>
-                                Transform raw audio data into valuable training sets with our transcription and speech annotation services, designed to enhance your voice recognition models.
+                                We provide sustainable waste recycling services, turning waste materials into reusable resources through innovative methods. 
+                                Our goal is to reduce waste and promote environmental conservation by transforming discarded materials into valuable products.
                             </p>
                         </div>
                     </Link>
                 </div>
 
-                {/* 3D Point Cloud Annotation */}
+                {/* Mass Education */}
                 <div className={`col-md-4 col-sm-6 mt-4 ${styles.serviceContainer}`} data-aos='fade'>
-                    <Link to="/pricing" style={{ textDecoration: "none" }}>
+                    <Link to="/login" style={{ textDecoration: "none" }}>
                         <div className={styles.img}>
-                            <FaCube className={styles.icon} />
-                            <p className={styles.imgTitle}>3D Point Cloud Annotation</p>
+                            <FaChalkboardTeacher className={styles.icon} />
+                            <p className={styles.imgTitle}>Mass Education</p>
                             <p className={styles.serviceDescription}>
-                                Perfect for autonomous vehicles, we label 3D point cloud data to ensure accurate depth perception and environmental understanding.
+                                We promote mass education on waste management and environmental sustainability through awareness programs and educational campaigns.
                             </p>
                         </div>
                     </Link>
