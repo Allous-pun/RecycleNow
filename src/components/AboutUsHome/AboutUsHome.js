@@ -5,35 +5,35 @@ const AboutUsHome = () => {
   return (
     <div className={`container ${styles.contain}`}>
       <div className="row">
-        {/* Autonomous Vehicles Box */}
+        {/* Waste Collection & Disposa Box */}
         <div className="col-md-3">
           <div className={styles.box}>
-            <h3>Autonomous Vehicles</h3>
-            <p>Precise labeling of objects, pedestrians, and road signs for improved AI navigation.</p>
+            <h3>Waste Collection & Disposal</h3>
+            <p>RecycleNow offers efficient waste collection and disposal through safe handling, waste segregation, recycling, composting, and energy generation, ensuring environmental protection and a cleaner community.</p>
           </div>
         </div>
 
-        {/* Healthcare Box */}
+        {/* Waste Segregation Box */}
         <div className="col-md-3">
           <div className={styles.box}>
-            <h3>Healthcare</h3>
-            <p>Annotating medical images for diagnostic tools and healthcare innovations.</p>
+            <h3>Waste Segregation</h3>
+            <p>RecycleNow specializes in waste segregation by sorting waste into organic, recyclable, and hazardous categories, promoting efficient recycling, resource conservation, and safe disposal for a sustainable environment.</p>
           </div>
         </div>
 
-        {/* Agriculture Box */}
+        {/* Waste Recycling Box */}
         <div className="col-md-3">
           <div className={styles.box}>
-            <h3>Agriculture</h3>
-            <p>Helping AI models detect crop health, growth patterns, and pest management through image data.</p>
+            <h3>Waste Recycling</h3>
+            <p>We provide sustainable waste recycling services, turning waste materials into reusable resources through innovative methods. Our goal is to reduce waste and promote environmental conservation by transforming discarded materials into valuable products.</p>
           </div>
         </div>
 
-        {/* E-commerce & Retail Box */}
+        {/* Mass Education Box */}
         <div className="col-md-3">
           <div className={styles.box}>
-            <h3>E-commerce & Retail</h3>
-            <p>Annotating products for enhanced search capabilities and personalized shopping experiences.</p>
+            <h3>Mass Education</h3>
+            <p>We promote mass education on waste management and environmental sustainability through awareness programs and educational campaigns.</p>
           </div>
         </div>
       </div>
@@ -43,7 +43,10 @@ const AboutUsHome = () => {
         <div className="col-md-12">
           <div className={styles.partnerBox}>
             <h3>Partner with Us</h3>
-            <p>Partner with us to power your AI innovations. Whether you're developing the next breakthrough in self-driving technology or creating more intuitive healthcare systems, we provide the data foundation that brings your vision to life.</p>
+            <p>
+            <p>Partner with RecycleNow to revolutionize waste management. Whether you're working on sustainable recycling solutions or 
+              innovative waste disposal methods, we provide the expertise and infrastructure to support a cleaner, greener future.</p>
+            </p>
           </div>
         </div>
       </div>
