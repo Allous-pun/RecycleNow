@@ -1,38 +1,38 @@
 const data = [
     {
         id: 1,
-        heading: "What services does KilonzoCorp provide?",
-        content: "KilonzoCorp specializes in data annotation services to support AI and machine learning models. Our offerings include Image & Video Annotation, Text Annotation, Audio Annotation, and 3D Point Cloud Annotation.",
+        heading: "What services does RecycleNow provide?",
+        content: "RecycleNow offers waste collection, recycling, and disposal services. We specialize in waste segregation, composting, hazardous waste management, and promoting a cleaner environment.",
     },
     {
         id: 2,
-        heading: "How can I get started with your services?",
-        content: "To begin, visit our Contact Us page and fill out the form. Our team will respond promptly to discuss your project requirements and guide you through the onboarding process.",
+        heading: "How can I schedule a waste pickup?",
+        content: "You can schedule a waste pickup by visiting our Contact Us page and filling out the request form. Our team will coordinate a convenient time to collect and properly dispose of your waste.",
     },
     {
         id: 3,
-        heading: "How do you ensure the accuracy of your annotations?",
-        content: "We implement strict quality control processes, including multi-stage reviews and validation. Our experienced team uses advanced tools and manual oversight to ensure high accuracy, vital for training reliable AI models.",
+        heading: "How does RecycleNow promote recycling?",
+        content: "We focus on waste segregation, ensuring recyclables like paper, plastics, glass, and metals are processed efficiently. We also educate communities on sustainable waste management practices.",
     },
     {
         id: 4,
-        heading: "What industries do you serve?",
-        content: "We work with a wide range of industries, including healthcare, autonomous driving, agriculture, and retail. Our data annotation services support various AI use cases, from diagnosing medical conditions to improving the safety of autonomous vehicles.",
+        heading: "What types of waste do you handle?",
+        content: "We handle household, industrial, and commercial waste, including biodegradable, recyclable, and hazardous materials. Our processes ensure safe disposal and environmental conservation.",
     },
     {
         id: 5,
-        heading: "How do you protect my data during the annotation process?",
-        content: "We prioritize data security with industry-standard encryption and access control measures. Our team follows strict confidentiality protocols, and we are willing to sign non-disclosure agreements (NDAs) to protect your intellectual property.",
+        heading: "How does RecycleNow ensure eco-friendly waste disposal?",
+        content: "We use lined landfills, high-temperature incineration for waste reduction, composting organic waste, and recycling materials to minimize environmental impact and support sustainability.",
     },
     {
         id: 6,
         heading: "What are your pricing options?", 
-        content: "We offer flexible pricing plans designed to scale with your data annotation needs, from essential services to comprehensive, enterprise-level solutions. For detailed information, please visit our Pricing page.",
+        content: "Our pricing varies based on the type and volume of waste. We offer flexible plans for households, businesses, and large-scale waste management solutions. Contact us for a detailed quote.",
     },
     {
         id: 7,
-        heading: "How can I contact KilonzoCorp for further inquiries?",
-        content: "You can reach us through the Contact Us page on our website. Alternatively, you can visit our office at Kathaayoni Estate, Machakos-Kitui Road, Machakos, Kenya.",
+        heading: "How can I contact RecycleNow for inquiries?",
+        content: "You can reach us through our Contact Us page or visit our office. Our team is available to assist you with waste management solutions and service inquiries.",
     },
 ];
 
