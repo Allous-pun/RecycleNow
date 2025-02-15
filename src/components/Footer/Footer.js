@@ -18,34 +18,39 @@ const Footer = () => {
     const [openService, setOpenService] = useState(null);
 
     const toggleService = (index) => {
-        setOpenService(openService === index ? null : index);
+        if (openService === index) {
+            setOpenService(null);
+        } else {
+            setOpenService(index);
+        }
     };
 
     return (
         <>
-            {/* Newsletter Section */}
-            <div className={styles.newsletterContainer}>
-                <div className={styles.newsletterContent}>
-                    <p className={styles.newsletterText}>
-                        Subscribe to our newsletter for <br />
-                        updates on our programs and initiatives.
-                    </p>
-                    <div className={styles.newsletterInputContainer}>
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            required
-                            className={styles.newsletterInput}
-                        />
-                        <button
-                            className={styles.subscribeButton}
-                            onClick={() => (window.location.href = "mailto:info@recyclenow.com")}
-                        >
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-            </div>
+          {/* Newsletter Section */}
+<div className={styles.newsletterContainer}>
+    <div className={styles.newsletterContent}>
+        <p className={styles.newsletterText}>
+            Subscribe to our newsletter for <br />
+            updates on our programs and initiatives.
+        </p>
+        <div className={styles.newsletterInputContainer}>
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+                className={styles.newsletterInput}
+            />
+            <button
+                className={styles.subscribeButton}
+                onClick={() => (window.location.href = "mailto:info@recyclenow.com")}
+            >
+                Subscribe
+            </button>
+        </div>
+    </div>
+</div>
+
 
             {/* Footer Section */}
             <div style={{ backgroundColor: '#266F46', paddingTop: '89px', paddingBottom: '90px' }}>
@@ -54,7 +59,7 @@ const Footer = () => {
                         {/* Column 1 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
                             <p className={styles.logo}>RecycleNow</p>
-                            <p className={styles.text}>RecycleNow Ltd is situated in Lake Basin Mall, along Kisumu - Kakamega Highway in Kisumu City.</p>
+                            <p className={styles.text}>  </p>
                         </div>
 
                         {/* Column 2 */}
@@ -67,7 +72,11 @@ const Footer = () => {
                                         <FiChevronDown style={{ marginLeft: '8px', cursor: 'pointer' }} />
                                     </div>
                                     {openService === index && (
-                                        <div className={styles.text} style={{ cursor: 'pointer' }}>
+                                        <div
+                                            className={styles.text}
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            {/* Link to the PDF */}
                                             <a href={service.pdfUrl} target="_blank" rel="noopener noreferrer">
                                                 View {service.name}
                                             </a>
@@ -82,7 +91,6 @@ const Footer = () => {
                             <p className={styles.head}>Our Services</p>
                             <p className={styles.text}>Waste Segregation</p>
                             <p className={styles.text}>Waste Recycling</p>
-                            <p className={styles.text}>Waste Collection & Disposal</p>
                         </div>
 
                         {/* Column 4 */}
@@ -101,11 +109,14 @@ const Footer = () => {
                                 <FaTwitter className={styles.icon} /> Twitter: @RecycleNow
                             </p>
                             
-                            {/* Contact Information Section */}
+                            {/* New Contact Information Section */}
                             <p className={styles.head}>Contact Us</p>
-                            <p className={styles.text}>PO Box 2288-90100 Eldoret</p>
-                            <p className={styles.text}>PO Box 1345 Kisumu</p>
-                            <p className={styles.text}>contact@RecycleNow.com</p>
+                            <p className={styles.text}>
+                                PO Box 2288-90100 Eldoret
+                            </p>
+                            <p className={styles.text}>
+                                 contact@RecycleNow.com
+                                 </p>
                         </div>
                     </div>
                 </div>
@@ -113,14 +124,14 @@ const Footer = () => {
 
             {/* Embedded Map Section */}
             <div style={{ marginTop: '20px', textAlign: 'center' }}>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.394398688508!2d37.275028174966195!3d-1.5307949984548723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMzEnNTAuOSJTIDM3wrAxNiczOS40IkU!5e0!3m2!1sen!2ske!4v1735552202036!5m2!1sen!2ske"
-                    width="100%"
-                    height="300"
-                    style={{ border: 0 }}
-                    title="Location Map of RecycleNow"
-                    allowFullScreen
-                    loading="lazy"
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.394398688508!2d37.275028174966195!3d-1.5307949984548723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMzEnNTAuOSJTIDM3wrAxNiczOS40IkU!5e0!3m2!1sen!2ske!4v1735552202036!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="300" 
+                    style={{ border: 0 }} 
+                    title="Location Map of KilonzoCorp"
+                    allowFullScreen 
+                    loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
