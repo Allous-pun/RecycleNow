@@ -58,8 +58,7 @@ const Footer = () => {
                     <div className="row">
                         {/* Column 1 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
-                            <p className={styles.logo}>RecycleNow</p>
-                            <p className={styles.text}>  </p>
+                            <p className={styles.logo}>RecycleNow is located along Kisumu - Kakamega Highway in  Lake Basin Mall</p>
                         </div>
 
                         {/* Column 2 */}
@@ -89,7 +88,9 @@ const Footer = () => {
                         {/* Column 3 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
                             <p className={styles.head}>Our Services</p>
+                            <p className={styles.text}>Mass Education </p>
                             <p className={styles.text}>Waste Segregation</p>
+                            <p className={styles.text}>Waste collection and Disposal</p>
                             <p className={styles.text}>Waste Recycling</p>
                         </div>
 
