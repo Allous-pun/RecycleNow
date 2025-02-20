@@ -45,9 +45,9 @@ const IndividualService = () => {
                 <div className="text-center">
                     <button 
                         className={styles.serviceButton}
-                        onClick={() => navigate('/login')} 
+                        onClick={() => navigate('/pricing')} 
                     >
-                        Get This Service
+                        Purchase This Service
                     </button>
                 </div>
             </div>

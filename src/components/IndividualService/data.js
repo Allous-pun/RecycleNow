@@ -35,7 +35,7 @@ const data = [
             {
                 heading: 'Organic Waste Segregation',
                 icon: image3,
-                content: 'We segregate organic waste for composting, transforming food scraps, plant matter, and other biodegradable materials into nutrient-rich organic fertilizer. This process reduces landfill waste, lowers greenhouse gas emissions, and enriches soil health. Composting accelerates natural decomposition, promoting sustainable agriculture and reducing the need for chemical fertilizers. By properly managing organic waste, we help create a circular system where waste is repurposed into valuable resources for farming and gardening.'
+                content: 'We segregate organic waste for composting, transforming food scraps, plant matter, and other biodegradable materials into nutrient-rich organic fertilizer. This process reduces landfill waste, lowers greenhouse gas emissions, and enriches soil health. Composting accelerates natural decomposition, promoting sustainable agriculture and reducing the need for chemical fertilizers. By properly managing organic waste, we help create a circular system where waste is repurposed into valuable resources for farming and gardening.',
             },
             {
                 heading: 'Recyclable Waste Segregation',
@@ -70,18 +70,18 @@ const data = [
     {
         id: 4,
         heading: 'Mass Education',
-        content: 'We promote mass education on waste management and environmental sustainability through awareness programs and educational campaigns.',
+        content: 'We believe that proper waste management starts with education. Our programs are designed to teach communities about responsible waste disposal, effective recycling methods, and sustainable composting practices. By equipping individuals with the right knowledge, we help reduce landfill waste, conserve natural resources, and protect the environment.',
         to: '/3d-point-cloud-annotation',  // URL path for this service
         contents: [
             {
                 heading: 'Waste Management Education',
                 icon: image1,
-                content: 'We educate communities about proper waste disposal, recycling, and composting practices to reduce waste and protect the environment.'
+                content: 'We are dedicated to educating communities on the importance of effective waste management to promote a cleaner and healthier environment. Our educational programs empower individuals with the knowledge and skills needed to practice proper waste disposal, recycling, and composting. By spreading awareness, we encourage people to adopt sustainable habits that reduce waste and conserve natural resources.',
             },
             {
                 heading: 'Environmental Awareness Campaigns',
                 icon: image2,
-                content: 'Our awareness campaigns spread knowledge on environmental sustainability, encouraging eco-friendly practices in schools and communities.'
+                content: 'Our environmental awareness campaigns are designed to educate, inspire, and empower individuals to embrace sustainable practices that protect our planet. Through engaging programs and outreach activities, we spread knowledge about environmental sustainability and promote eco-friendly behaviors in schools, communities, and workplaces.',
             },
         ]
     }
