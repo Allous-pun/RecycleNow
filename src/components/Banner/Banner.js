@@ -6,10 +6,10 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import styles from './Banner.module.css';
 
 const images = [
-  { src: require('../../assets/6.jpg'), alt: "Image 1", text: "Empowering AI with Precision-Driven Data Annotation for Smarter Solutions", buttonLabel: "Get Started", buttonLink: "/services" },
-  { src: require('../../assets/om.jpeg'), alt: "Image 2", text: "Fueling AI Innovations with Accurate Data Annotation and Deep Learning", buttonLabel: "LEARN MORE", buttonLink: "" },
-  { src: require('../../assets/om0.jpeg'), alt: "Image 3", text: "Transforming Industries with High-Quality Data Annotation for AI Growth", buttonLabel: "START FREE TRIAL", buttonLink: "/shop" },
-  { src: require('../../assets/10.jpeg'), alt: "Image 5", text: "Advancing Business Success with Intelligent AI and Data Annotation", buttonLabel: "DISCOVER OUR SERVICES", buttonLink: "/aboutUs" },
+  { src: require('../../assets/6.jpg'), alt: "Image 1", text: "Enhancing Waste Collection with Efficient Sorting and Sustainable Solutions", buttonLabel: "Get Started", buttonLink: "/services" },
+  { src: require('../../assets/om.jpeg'), alt: "Image 2", text: "Optimizing Waste Segregation with Smart Sorting and Sustainable Practices", buttonLabel: "LEARN MORE", buttonLink: "" },
+  { src: require('../../assets/om0.jpeg'), alt: "Image 3", text: "Revolutionizing Waste Recycling with Innovative and Sustainable Solutions", buttonLabel: "START FREE TRIAL", buttonLink: "/shop" },
+  { src: require('../../assets/10.jpeg'), alt: "Image 5", text: "Enhancing Waste Management with Smart Solutions and Sustainable Practices", buttonLabel: "DISCOVER OUR SERVICES", buttonLink: "/aboutUs" },
 ];
 
 const PreviousArrow = ({ onClick }) => (
