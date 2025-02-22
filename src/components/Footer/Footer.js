@@ -39,7 +39,7 @@ const Footer = () => {
                         />
                         <button
                             className={styles.subscribeButton}
-                            onClick={() => (window.location.href = "mailto:info@recyclenow.com")}
+                            onClick={() => (window.location.href = "mailto:info@RecycleNow.com")}
                         >
                             Subscribe
                         </button>
@@ -53,7 +53,8 @@ const Footer = () => {
                     <div className="row">
                         {/* Column 1 */}
                         <div className={`col-lg-3 col-sm-6 ${styles.contain}`}>
-                            <p className={styles.logo}>RecycleNow is located along Kisumu - Kakamega Highway in Lake Basin Mall</p>
+                            <p className={styles.logo}>RecycleNow</p>
+                            <p className={styles.text}> RecycleNow Ltd is situated in the Lake Basin Mall along Kisumu - Kakamega Highway  in Kisumu City </p>
                         </div>
 
                         {/* Column 2 */}
@@ -103,8 +104,9 @@ const Footer = () => {
 
                             {/* Contact Information Section */}
                             <p className={styles.head}>Contact Us</p>
-                            <p className={styles.text}>PO Box 2288-90100 Kisumu</p>
-                            <p className={styles.text}>contact@RecycleNow.com</p>
+                            <p className={styles.text}>
+                                PO Box 1345 kisumu 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +114,7 @@ const Footer = () => {
 
             {/* Embedded Map Section */}
             <div style={{ marginTop: '20px', textAlign: 'center' }}>
-                <iframe
+                <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127674.07694704065!2d34.738168599999995!3d-0.07497285000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa437ad4ac81d%3A0x2012a439d6248dd2!2sKisumu!5e0!3m2!1sen!2ske!4v1739730368087!5m2!1sen!2ske"
                     width="100%"
                     height="300"
