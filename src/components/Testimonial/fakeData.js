@@ -1,4 +1,4 @@
-import berylImage from '../../assets/testimonials/beryl.jpg';
+import berylImage from '../../assets/testimonials/testimonial2.jpg';
 import manuImage from '../../assets/testimonials/manu.jpg';
 import melodyImage from '../../assets/testimonials/melody.jpg';
 import tonyImage from '../../assets/testimonials/Tony.jpg';
