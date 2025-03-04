@@ -1,17 +1,9 @@
-import berylImage from '../../assets/testimonials/testimonial2.jpg';
 import manuImage from '../../assets/testimonials/manu.jpg';
 import melodyImage from '../../assets/testimonials/melody.jpg';
 import tonyImage from '../../assets/testimonials/Tony.jpg';
 import profile from '../../assets/testimonials/profile.jpeg';
 import testimonial from '../../assets/testimonials/testimonial1.png';
 export const fakeData = [
-    {
-        id: 1,
-        img: berylImage, 
-        name: 'Ian Dan',
-        profession: 'Founder & CEO, RecycleNow',
-        message: "Our innovative waste management methods have not only helped in reducing waste but also created new livelihood opportunities. By turning waste into valuable resources, we are promoting sustainable practices and contributing to a cleaner environment."
-    },
     {
         id: 2,
         img: manuImage, 
