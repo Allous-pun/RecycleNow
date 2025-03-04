@@ -2,7 +2,7 @@ import manuImage from '../../assets/testimonials/manu.jpg';
 import melodyImage from '../../assets/testimonials/melody.jpg';
 import tonyImage from '../../assets/testimonials/Tony.jpg';
 import profile from '../../assets/testimonials/profile.jpeg';
-import testimonial from '../../assets/testimonials/testimonial1.png';
+import testimonial from '../../assets/testimonials/example.png';
 export const fakeData = [
     {
         id: 2,
