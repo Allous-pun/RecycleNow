@@ -1,11 +1,14 @@
 import React from "react";
 import styles from './AboutUsHome.module.css';
+import { useNavigate } from "react-router-dom";
 
 const AboutUsHome = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={`container ${styles.contain}`}>
       <div className="row">
-        {/* Waste Collection & Disposa Box */}
+        {/* Waste Collection & Disposal Box */}
         <div className="col-md-3">
           <div className={styles.box}>
             <h3>Waste Collection & Disposal</h3>
@@ -43,11 +46,18 @@ const AboutUsHome = () => {
         <div className="col-md-12">
           <div className={styles.partnerBox}>
             <h3>Partner with Us</h3>
-            <p>
             <p>Partner with RecycleNow to revolutionize waste management. Whether you're working on sustainable recycling solutions or 
               innovative waste disposal methods, we provide the expertise and infrastructure to support a cleaner, greener future.</p>
-            </p>
           </div>
+        </div>
+      </div>
+
+      {/* Meet Our Team Button */}
+      <div className="row mt-4">
+        <div className="col-md-12 text-center">
+          <button className={styles.teamButton} onClick={() => navigate('/team')}>
+            Meet Our Team
+          </button>
         </div>
       </div>
     </div>

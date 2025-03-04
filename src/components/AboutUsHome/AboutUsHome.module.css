@@ -59,3 +59,26 @@
     font-size: 18px;
     color: #34495e;
 }
+
+.teamButton {
+    background-color: #28a745; /* Green color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .teamButton:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  .teamButton:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+  }
+  
