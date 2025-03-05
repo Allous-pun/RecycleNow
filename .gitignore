@@ -11,3 +11,6 @@ node_modules
 !/RecycleNow
 !.gitignore
 !/backend
+!/src/Dashboards
+!/src/DashboardApp.js
+!/src/DashboardIndex.js
