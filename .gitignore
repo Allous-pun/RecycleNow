@@ -12,5 +12,4 @@ node_modules
 !.gitignore
 !/backend
 !/src/Dashboards
-!/src/DashboardApp.js
-!/src/DashboardIndex.js
+!/src/Dashboards/styles
