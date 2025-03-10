@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/pundit/Desktop/Pundit & Projects/Recycle-Now/backend/venv/bin/python" "$0" "$@"
+'''exec' "/home/pundit/Desktop/Pundit & Projects/Recycle-Now/backend/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

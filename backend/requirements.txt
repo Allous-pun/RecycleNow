@@ -6,3 +6,4 @@ django-environ
 djangorestframework-simplejwt
 drf-yasg
 whitenoise
+sqlite3
