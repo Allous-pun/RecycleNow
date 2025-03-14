@@ -1,6 +1,6 @@
 export const fakeData = [
     {
-        id: 2, 
+        id: 2,
         name: 'Nelson T',
         profession: 'NEMA DIRECTOR',
         message: "Managing municipal solid waste has been a challenge, but with the new waste management system, we have seen improvements in waste collection and disposal. The system has helped us address financial constraints and improve public awareness about sustainable waste management practices."
