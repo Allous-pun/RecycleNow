@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom'; 
-import styles from './Login.module.css'; 
-import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa'; 
+import { NavLink, useNavigate } from 'react-router-dom';
+import styles from './Login.module.css';
+import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -10,9 +10,9 @@ const Login = () => {
   });
 
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState(''); 
-  const [showSuccessDialog, setShowSuccessDialog] = useState(false); 
-  const [showErrorDialog, setShowErrorDialog] = useState(false); 
+  const [error, setError] = useState('');
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
+  const [showErrorDialog, setShowErrorDialog] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -24,14 +24,30 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Placeholder authentication (you can integrate your own backend here)
-    if (formData.email === "test@example.com" && formData.password === "password123") {
-      console.log("User logged in successfully");
-      localStorage.setItem('authToken', 'dummy-token'); // Example token storage
-      setShowSuccessDialog(true);
-    } else {
-      setError("Invalid email or password.");
+    setError(""); // Clear previous errors
+
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/login/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        console.log("User logged in successfully", data);
+        localStorage.setItem("authToken", data.token); // Store token
+        setShowSuccessDialog(true);
+      } else {
+        setError(data.error || "Login failed. Please try again.");
+        setShowErrorDialog(true);
+      }
+    } catch (error) {
+      console.error("Error logging in:", error);
+      setError("Something went wrong. Please try again.");
       setShowErrorDialog(true);
     }
   };

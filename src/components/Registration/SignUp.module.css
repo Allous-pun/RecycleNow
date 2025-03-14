@@ -152,4 +152,38 @@
   .modalButton:hover {
     background-color: #305580;
   }
+  .roleSelection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .roleSelection label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .dropdown:focus {
+    border-color: #007bff;
+  }
+  
+  .dropdown option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+  }
   

@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import styles from './SignUp.module.css';
+// eslint-disable-next-line
 import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
+
 import Modal from 'react-modal';
+import axios from 'axios';
 
 const SignUp = () => {
+  const [selectedRole, setSelectedRole] = useState('');
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -22,20 +26,34 @@ const SignUp = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // Email validation regex
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  const roleEndpoints = {
+    administrator: 'http://127.0.0.1:8000/api/admin/register/',
+    user: 'http://127.0.0.1:8000/api/user/register/',
+    collector: 'http://127.0.0.1:8000/api/collector/register/',
+    recycler: 'http://127.0.0.1:8000/api/recycler/register/',
+    local_authority: 'http://127.0.0.1:8000/api/local_authority/register/',
+  };
+
+  const dashboardPaths = {
+    administrator: '/admin/dashboard',
+    user: '/user/dashboard',
+    collector: '/collector/dashboard',
+    recycler: '/recycler/dashboard',
+    local_authority: '/local-authority/dashboard',
+  };
+
+  const handleRoleChange = (e) => {
+    setSelectedRole(e.target.value);
+  };
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const isFormValid = () => {
     return (
+      selectedRole &&
       formData.email &&
-      emailRegex.test(formData.email) &&
       formData.password === formData.confirmPassword &&
       formData.password.length >= 6
     );
@@ -43,23 +61,21 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (!isFormValid()) {
       setError("Please fill out all fields correctly.");
       return;
     }
 
     setLoading(true);
-
     try {
-      // Simulating successful signup (replace with API request if needed)
-      setTimeout(() => {
+      const response = await axios.post(roleEndpoints[selectedRole], formData);
+      if (response.status === 201) {
         setIsSuccessModalOpen(true);
-        setLoading(false);
-      }, 1500);
+      }
     } catch (error) {
-      setErrorMessage("An error occurred during registration.");
+      setErrorMessage(error.response?.data?.message || "An error occurred.");
       setIsErrorModalOpen(true);
+    } finally {
       setLoading(false);
     }
   };
@@ -69,9 +85,9 @@ const SignUp = () => {
     setIsErrorModalOpen(false);
   };
 
-  const handleSuccessContinue = () => {
-    setIsSuccessModalOpen(false);
-    navigate('/login');
+  const handleSuccessRedirect = () => {
+    // Navigate to the appropriate dashboard based on the role
+    navigate(dashboardPaths[selectedRole]);
   };
 
   return (
@@ -84,108 +100,88 @@ const SignUp = () => {
 
       {error && <p className={styles.errorText}>{error}</p>}
 
-      <form onSubmit={handleSubmit} className={styles.signupForm}>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className={styles.inputField}
-        />
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className={styles.inputField}
-        />
-        <input
-          type="text"
-          name="contact"
-          placeholder="Contact"
-          value={formData.contact}
-          onChange={handleChange}
-          required
-          className={styles.inputField}
-        />
-        <div className={styles.passwordWrapper}>
+      <div className={styles.roleSelection}>
+        <label>Select Your Role:</label>
+        <select value={selectedRole} onChange={handleRoleChange} className={styles.dropdown}>
+          <option value="">-- Select Role --</option>
+          <option value="administrator">Administrator</option>
+          <option value="user">User</option>
+          <option value="collector">Collector</option>
+          <option value="recycler">Recycler</option>
+          <option value="local_authority">Local Authority</option>
+        </select>
+      </div>
+
+      {selectedRole && (
+        <form onSubmit={handleSubmit} className={styles.signupForm}>
           <input
-            type={showPassword ? "text" : "password"}
-            name="password"
-            placeholder="Password"
-            value={formData.password}
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
             onChange={handleChange}
             required
             className={styles.inputField}
           />
-          <button
-            type="button"
-            onClick={() => setShowPassword(!showPassword)}
-            className={styles.eyeIcon}
-          >
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
-          </button>
-        </div>
-        <div className={styles.passwordWrapper}>
           <input
-            type={showConfirmPassword ? "text" : "password"}
-            name="confirmPassword"
-            placeholder="Confirm Password"
-            value={formData.confirmPassword}
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
             onChange={handleChange}
             required
             className={styles.inputField}
           />
-          <button
-            type="button"
-            onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-            className={styles.eyeIcon}
-          >
-            {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+          <input
+            type="text"
+            name="contact"
+            placeholder="Contact"
+            value={formData.contact}
+            onChange={handleChange}
+            required
+            className={styles.inputField}
+          />
+          <div className={styles.passwordWrapper}>
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+              className={styles.inputField}
+            />
+            <button type="button" onClick={() => setShowPassword(!showPassword)} className={styles.eyeIcon}>
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
+          <div className={styles.passwordWrapper}>
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              required
+              className={styles.inputField}
+            />
+            <button type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)} className={styles.eyeIcon}>
+              {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
+          <button type="submit" className={styles.signupButton} disabled={!isFormValid() || loading}>
+            {loading ? "Signing Up..." : "Sign Up"}
           </button>
-        </div>
+        </form>
+      )}
 
-        <button
-          type="submit"
-          className={styles.signupButton}
-          disabled={!isFormValid() || loading}
-        >
-          {loading ? "Signing Up..." : "Sign Up"}
-        </button>
-      </form>
-
-      <div className={styles.orDivider}>OR</div>
-
-      <button className={styles.googleSignup}>
-        <FaGoogle className={styles.googleIcon} />
-        Sign Up with Google
-      </button>
-
-      {/* Success Modal */}
-      <Modal
-        isOpen={isSuccessModalOpen}
-        onRequestClose={closeModal}
-        contentLabel="Registration Successful"
-        className={styles.modal}
-        overlayClassName={styles.overlay}
-      >
+      <Modal isOpen={isSuccessModalOpen} onRequestClose={closeModal} contentLabel="Registration Successful" className={styles.modal} overlayClassName={styles.overlay}>
         <h2>Registration Successful</h2>
         <p>Your account has been successfully created!</p>
-        <button onClick={handleSuccessContinue} className={styles.modalButton}>Continue to Login</button>
+        <button onClick={handleSuccessRedirect} className={styles.modalButton}>Go to Dashboard</button>
       </Modal>
 
-      {/* Error Modal */}
-      <Modal
-        isOpen={isErrorModalOpen}
-        onRequestClose={closeModal}
-        contentLabel="Registration Error"
-        className={styles.modal}
-        overlayClassName={styles.overlay}
-      >
+      <Modal isOpen={isErrorModalOpen} onRequestClose={closeModal} contentLabel="Registration Error" className={styles.modal} overlayClassName={styles.overlay}>
         <h2>Registration Error</h2>
         <p>{errorMessage}</p>
         <button onClick={closeModal} className={styles.modalButton}>Close</button>

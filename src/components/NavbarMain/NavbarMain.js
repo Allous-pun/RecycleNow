@@ -110,7 +110,7 @@ const NavbarMain = () => {
                 <NavDropdown.Item as={NavLink} to="/login">
                   <FaSignInAlt /> Log In
                 </NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/forgetpassword">
+                <NavDropdown.Item as={NavLink} to="/forgot-password">
                   <FaRegEye /> Reset Password
                 </NavDropdown.Item>
               </NavDropdown>

@@ -1,9 +1,0 @@
-Django
-djangorestframework
-gunicorn
-django-cors-headers
-django-environ
-djangorestframework-simplejwt
-drf-yasg
-whitenoise
-sqlite3
